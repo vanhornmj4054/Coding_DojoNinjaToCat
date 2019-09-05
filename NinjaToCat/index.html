@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Ninja To Cat</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('#top').click(function(){
+				var temp = $('#top').attr('src');
+				var temp2 = $('#top').attr('data-alt-src');
+				$('#top').attr('src', temp2);
+				$('#top').attr('data-alt-src', temp);
+			});
+
+			$('#upper').click(function(){
+				var temp = $('#upper').attr('src');
+				var temp2 = $('#upper').attr('data-alt-src');
+				$('#upper').attr('src', temp2);
+				$('#upper').attr('data-alt-src', temp);
+			});
+
+			$('#middle').click(function(){
+				var temp = $('#middle').attr('src');
+				var temp2 = $('#middle').attr('data-alt-src');
+				$('#middle').attr('src', temp2);
+				$('#middle').attr('data-alt-src', temp);
+			});
+
+			$('#lower').click(function(){
+				var temp = $('#lower').attr('src');
+				var temp2 = $('#lower').attr('data-alt-src');
+				$('#lower').attr('src', temp2);
+				$('#lower').attr('data-alt-src', temp);
+			});
+
+			$('#bottom').click(function(){
+				var temp = $('#bottom').attr('src');
+				var temp2 = $('#bottom').attr('data-alt-src');
+				$('#bottom').attr('src', temp2);
+				$('#bottom').attr('data-alt-src', temp);
+			});
+		});
+
+	</script>
+</head>
+<body>
+	
+	<img id="top" src='ninja0.png' data-alt-src='cat0.png' alt="puzzle piece"><br>
+	<img id="upper" src='ninja1.png' data-alt-src='cat1.png' alt="puzzle piece"><br>
+	<img id="middle" src='ninja2.png' data-alt-src='cat2.png' alt="puzzle piece"><br>
+	<img id="lower" src='ninja3.png' data-alt-src='cat3.png' alt="puzzle piece"><br>
+	<img id="bottom" src='ninja4.png' data-alt-src='cat4.png' alt="puzzle piece"><br>
+	
+</body>
+</html>
